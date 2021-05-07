@@ -40,3 +40,27 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+
+Navigation.array.forEach(element => {
+  element.style.color ="green"
+});
+
+const newNav =document.createElement.querySelector("nav");
+
+const newItem = document.createElement("a");
+newItem.innerText = "social page";
+newItem.style.color = "green";
+newNav.appendChild(newItem);
+
+const signUp = document.createElement("a");
+signUp.innerText = "sign up";
+signUp.style.color = "green";
+newNav.prepend(signUp);
+
+mainContenrt.setAttribute("backGroundColor", "green");
+
+
+const footerText = document.querySelector("footer");
+footer.Text.innerText = siteContent["footer"]["copy"]
